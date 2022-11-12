@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --green:#27ae60;
+  --black:#2c2c54;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--green);
+  color:#fff;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-section{
+    padding: 40px 0 0;
+}
+
+.title{
+    font-size: 2.5em;
+    color: var(--green);
+    text-align: center;
+}
+
+.about-section .logo{
+    flex: 0 0 10%;
+    max-width: 40%;
+    padding: 0 25px;
+    font-size: 15em;
+    color: var(--green);
+    text-align: end;
+}
+
+.about-section .about-info{
+    flex: 0 0 60%;
+    max-width: 50%;
+    padding: 0 25px;
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+
+.about-section .about-info p{
+    font-size: 2em;
+    line-height: -26px;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+
+.about-section .about-info span{
+    font-weight: 600;
+}
+
+.about-section .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:var(--green);
+    color:#fff;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    margin: 0 43%;
+    cursor: pointer;
+    border-radius: 5%;
+    /* text-align: center; */
+}
+  
+.about-section .btn:hover{
+    background:var(--black);
+}
+
