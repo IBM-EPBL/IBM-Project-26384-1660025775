@@ -22,6 +22,11 @@ def login():
 def register():
 	return render_template("register.html")
 
+@app.route("/fb",methods=['GET'])
+@cross_origin()
+def feedback():
+	return render_template("feedback.html")
+
 @app.route("/predict",methods=['GET', 'POST'])
 @cross_origin()
 def predict():
